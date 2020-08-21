@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UDXljFmpbHaCiDd3rYcednA/R8g=
+		ZjEKvQIMntK/KDUvFVMl9VEX+co=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm.swiftmodule</key>
 		<data>
-		K3V0YQ6DnCP1T48tsUzMYIGmZhQ=
+		M/X4xg5HHnidMo4oZD46Y8alwfE=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NmfDQnQkm4ngPLxKUTgZ0lNjl+k=
+		QT0lqt1/V6b1Eduz/ZFNa60cGc4=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		NmfDQnQkm4ngPLxKUTgZ0lNjl+k=
+		QT0lqt1/V6b1Eduz/ZFNa60cGc4=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		K3V0YQ6DnCP1T48tsUzMYIGmZhQ=
+		M/X4xg5HHnidMo4oZD46Y8alwfE=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		K3V0YQ6DnCP1T48tsUzMYIGmZhQ=
+		M/X4xg5HHnidMo4oZD46Y8alwfE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,11 +100,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K3V0YQ6DnCP1T48tsUzMYIGmZhQ=
+			M/X4xg5HHnidMo4oZD46Y8alwfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			A8AmpG8e8r+WbnzuaTGKvUY7mCkhyZBOIFRAOamCH4M=
+			lS9tQW0DeIsmpx18ba8q9s8dP/mtwalmKPtI93H8SUs=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -122,11 +122,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NmfDQnQkm4ngPLxKUTgZ0lNjl+k=
+			QT0lqt1/V6b1Eduz/ZFNa60cGc4=
 			</data>
 			<key>hash2</key>
 			<data>
-			DI7j5rFpuSPg/FgN0zaqrJok4EkNQ2Fv+01PfhBMIyg=
+			MfmcWSvV3ZyQntwqua+58b25989yotjuO3xCkcF4Uts=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftdoc</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NmfDQnQkm4ngPLxKUTgZ0lNjl+k=
+			QT0lqt1/V6b1Eduz/ZFNa60cGc4=
 			</data>
 			<key>hash2</key>
 			<data>
-			DI7j5rFpuSPg/FgN0zaqrJok4EkNQ2Fv+01PfhBMIyg=
+			MfmcWSvV3ZyQntwqua+58b25989yotjuO3xCkcF4Uts=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K3V0YQ6DnCP1T48tsUzMYIGmZhQ=
+			M/X4xg5HHnidMo4oZD46Y8alwfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			A8AmpG8e8r+WbnzuaTGKvUY7mCkhyZBOIFRAOamCH4M=
+			lS9tQW0DeIsmpx18ba8q9s8dP/mtwalmKPtI93H8SUs=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/armv7.swiftdoc</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K3V0YQ6DnCP1T48tsUzMYIGmZhQ=
+			M/X4xg5HHnidMo4oZD46Y8alwfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			A8AmpG8e8r+WbnzuaTGKvUY7mCkhyZBOIFRAOamCH4M=
+			lS9tQW0DeIsmpx18ba8q9s8dP/mtwalmKPtI93H8SUs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
