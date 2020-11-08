@@ -1,0 +1,426 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIMarketpay
+import Alamofire
+import Contacts
+import ContactsUI
+import CoreGraphics
+import CoreLocation
+import Foundation
+import Kingfisher
+import MCIAuth
+import MCIAuthCore
+import MCICheckoutCore
+import MCIFoundation
+import MCIIssuerViewerCore
+import MCIKit
+import MCILogger
+import MCIMarketPayCore
+@_exported import MCIMarketpay
+import MapKit
+import Swift
+import UIKit
+import WebKit
+@objc @_inheritsConvenienceInitializers final public class WalletSectionHeaderView : UIKit.UITableViewHeaderFooterView, Identifiable, NibReusable {
+  @objc override final public func awakeFromNib()
+  @objc override final public func prepareForReuse()
+  final public func configure(with title: Swift.String)
+  @objc deinit
+  @objc override dynamic public init(reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public enum CellphoneRechargeTickeDismissal {
+  case dismiss
+  case unwindToHome
+  case dismissToRoot
+  public static func == (a: CellphoneRechargeTickeDismissal, b: CellphoneRechargeTickeDismissal) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers final public class CellphoneRechargeTicketVC : MCIViewController, Identifiable {
+  final public var merchant: MCIMerchant?
+  final public var transaction: MCICellphoneRechargeTransaction?
+  final public var dismissal: CellphoneRechargeTickeDismissal
+  @objc override final public func viewDidLoad()
+  @objc override final public func viewDidLayoutSubviews()
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers final public class VoucherVC : MCIViewController, Identifiable {
+  final public var activeAccounts: [MCIAccount]?
+  final public var merchant: MCIMerchant?
+  final public var serviceTitle: Swift.String?
+  final public var dismissMode: VoucherTickeDismissal
+  final public var requireStyle: MCINavigationStyle {
+    get
+  }
+  @objc override final public func viewDidLoad()
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension VoucherVC : UIKit.UITableViewDataSource {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+}
+extension VoucherVC : UIKit.UITableViewDelegate {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension VoucherVC : MCICoverImageDelegate {
+  final public func coverImageDidTapOnHistory()
+  final public func coverImageDidTapOnParticipantingStores()
+}
+extension VoucherVC : CheckoutDelegate {
+  final public func didComplete(with object: Any?)
+}
+extension VoucherVC : UIKit.UIScrollViewDelegate {
+  @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+}
+@objc @_inheritsConvenienceInitializers final public class WebPaymentReceiptVC : MCIViewController, Identifiable {
+  final public var voucher: MCIVoucherTransaction?
+  @objc override final public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers final public class Api99TransactionHistoryVC : MCIViewController, Identifiable {
+  @objc override final public func viewDidLoad()
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension Api99TransactionHistoryVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@objc @_inheritsConvenienceInitializers final public class MarketpayCategoriesTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
+  @objc override final public func awakeFromNib()
+  @objc override final public func systemLayoutSizeFitting(_ targetSize: CoreGraphics.CGSize, withHorizontalFittingPriority horizontalFittingPriority: UIKit.UILayoutPriority, verticalFittingPriority: UIKit.UILayoutPriority) -> CoreGraphics.CGSize
+  final public func configure(with categories: [MCICategory], limit: Swift.Int?)
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension MarketpayCategoriesTableCell : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate {
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+public enum TVRechargeTicketDismissal {
+  case dismiss
+  case unwindToHome
+  case dismissToRoot
+  public static func == (a: TVRechargeTicketDismissal, b: TVRechargeTicketDismissal) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers final public class TVRechargeTicketVC : MCIViewController, Identifiable {
+  final public var merchant: MCIMerchant?
+  final public var transaction: MCITvRechargeTransaction?
+  final public var dismissal: TVRechargeTicketDismissal
+  @objc override final public func viewDidLoad()
+  @objc override final public func viewDidLayoutSubviews()
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension UIStoryboard {
+  public class var marketpay: UIKit.UIStoryboard {
+    get
+  }
+  public class var category: UIKit.UIStoryboard {
+    get
+  }
+  public class var webPayment: UIKit.UIStoryboard {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers final public class CategoryGroupVC : MCIViewController, Identifiable {
+  @objc override final public func viewDidLoad()
+  final public func configure(with category: MCICategory)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension CategoryGroupVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+@objc @_inheritsConvenienceInitializers final public class MarketpayListVC : MCIViewController, Identifiable {
+  final public var merchants: [MCIMerchant]
+  @objc override final public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension MarketpayListVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@_hasMissingDesignatedInitializers final public class MarketPayConfig {
+  public static let shared: MarketPayConfig
+  final public var imageEmptyCategory: UIKit.UIImage?
+  final public var isSdk: Swift.Bool
+  @objc deinit
+}
+public protocol MarketpayCellDelegate : AnyObject {
+  func segue(with identifier: Swift.String, sender: Any?)
+}
+@objc @_inheritsConvenienceInitializers final public class MarketpayHorizontalListTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
+  weak final public var delegate: MarketpayCellDelegate?
+  @objc override final public func awakeFromNib()
+  final public func configure(with title: Swift.String, section: MarketpaySection, merchants: [MCIMerchant], limit: Swift.Int?)
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension MarketpayHorizontalListTableCell : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate {
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+public enum TVRechargeSection {
+  case cover
+  case description
+  case disclaimer
+  case loading
+  case amount
+  case input
+  case error
+  public static func == (a: TVRechargeSection, b: TVRechargeSection) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers final public class TVRechargeVC : MCIViewController, Identifiable {
+  final public var activeAccounts: [MCIAccount]?
+  final public var merchant: MCIMerchant?
+  final public var serviceTitle: Swift.String?
+  final public var dismissMode: TVRechargeTicketDismissal
+  final public var requireStyle: MCINavigationStyle {
+    get
+  }
+  @objc override final public func viewDidLoad()
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension TVRechargeVC : UIKit.UITableViewDataSource {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+}
+extension TVRechargeVC : UIKit.UITableViewDelegate {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension TVRechargeVC : MCICoverImageDelegate {
+  final public func coverImageDidTapOnHistory()
+}
+extension TVRechargeVC : CheckoutDelegate {
+  final public func didComplete(with object: Any?)
+}
+extension TVRechargeVC : UIKit.UIScrollViewDelegate {
+  @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+}
+public enum MarketpaySection {
+  case none
+  case banner
+  case categories
+  case divider
+  case popular
+  case favorites
+  public static func == (a: MarketpaySection, b: MarketpaySection) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers final public class MarketpayVC : MCIViewController, Identifiable {
+  final public var requireStyle: MCINavigationStyle {
+    get
+  }
+  @objc override final public func viewDidLoad()
+  @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension MarketpayVC : UIKit.UISearchBarDelegate {
+  @objc final public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @objc final public func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
+  @objc final public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @objc final public func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
+}
+extension MarketpayVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc final public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @objc final public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+}
+extension MarketpayVC : MarketpayCellDelegate {
+  final public func segue(with identifier: Swift.String, sender: Any?)
+}
+@objc @_inheritsConvenienceInitializers final public class MarketpayCategoriesVC : MCIViewController, Identifiable {
+  final public var categories: [MCICategory]
+  @objc override final public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension MarketpayCategoriesVC : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate {
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+@objc @_inheritsConvenienceInitializers final public class MarketpayBannerTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
+  weak final public var delegate: MarketpayCellDelegate?
+  @objc override final public func awakeFromNib()
+  final public func configure(with image: Swift.String?)
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public struct MCIMarketPay : MarketPayable {
+  public init()
+  public func present(_ controller: UIKit.UIViewController, with image: UIKit.UIImage?, transition: UIKit.UIModalTransitionStyle, completion: (() -> Swift.Void)?)
+  public func voucher(activeAccounts: [MCIAccount]?, serviceTittle: Swift.String?, merchant: MCIMerchant) -> UIKit.UIViewController
+  public func cellphoneRecharge(activeAccounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
+  public func tvRecharge(activeAccounts: [MCIAccount]?, serviceTittle: Swift.String?, merchant: MCIMerchant) -> UIKit.UIViewController
+  public func api99(activeAccounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
+  public func webView(activeAcounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
+  public func empty() -> UIKit.UIViewController
+  public func isSdk()
+}
+@objc @_inheritsConvenienceInitializers final public class CategoryListVC : MCIViewController {
+  @objc override final public func viewDidLoad()
+  final public func configure(with category: MCICategory)
+  final public func configure(with subcategory: MCISubCategory)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension CategoryListVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@objc @_inheritsConvenienceInitializers final public class CellphoneRechargeVC : MCIViewController, Identifiable {
+  final public var dismissMode: CellphoneRechargeTickeDismissal
+  final public var requireStyle: MCINavigationStyle {
+    get
+  }
+  @objc override final public func viewDidLoad()
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
+  final public func configure(with category: MCICategory?, merchant: MCIMerchant?, activeAccounts: [MCIAccount]?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension CellphoneRechargeVC : UIKit.UITableViewDataSource {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+}
+extension CellphoneRechargeVC : UIKit.UITableViewDelegate {
+  @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension CellphoneRechargeVC : MCICoverImageDelegate {
+  final public func coverImageDidTapOnHistory()
+}
+extension CellphoneRechargeVC : UIKit.UIScrollViewDelegate {
+  @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+}
+extension CellphoneRechargeVC : CheckoutDelegate {
+  final public func didComplete(with object: Any?)
+}
+public enum VoucherTickeDismissal {
+  case dismiss
+  case unwindToHome
+  case dismissRoot
+  public static func == (a: VoucherTickeDismissal, b: VoucherTickeDismissal) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers final public class VoucherTicketVC : MCIViewController, Identifiable {
+  final public var merchant: MCIMerchant?
+  final public var voucher: MCIVoucherTransaction?
+  final public var dismissal: VoucherTickeDismissal
+  @objc override final public func viewDidLoad()
+  @objc override final public func viewDidLayoutSubviews()
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers final public class CategoryEmptyVC : MCIViewController {
+  @objc override final public func viewDidLoad()
+  final public func configure(with category: MCICategory)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers final public class Api99ServiceVC : MCIViewController {
+  final public var activeAccounts: [MCIAccount]?
+  final public var merchant: MCIMerchant?
+  @objc override final public func viewDidLoad()
+  @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension Api99ServiceVC : MapKit.MKMapViewDelegate {
+  @objc final public func mapView(_ mapView: MapKit.MKMapView, rendererFor overlay: MapKit.MKOverlay) -> MapKit.MKOverlayRenderer
+  @objc final public func mapView(_ mapView: MapKit.MKMapView, viewFor annotation: MapKit.MKAnnotation) -> MapKit.MKAnnotationView?
+  @objc final public func mapView(_ mapView: MapKit.MKMapView, didSelect view: MapKit.MKAnnotationView)
+}
+@objc @_inheritsConvenienceInitializers final public class MarketpayDividerTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
+  @objc override final public func awakeFromNib()
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension CellphoneRechargeTickeDismissal : Swift.Equatable {}
+extension CellphoneRechargeTickeDismissal : Swift.Hashable {}
+extension TVRechargeTicketDismissal : Swift.Equatable {}
+extension TVRechargeTicketDismissal : Swift.Hashable {}
+extension TVRechargeSection : Swift.Equatable {}
+extension TVRechargeSection : Swift.Hashable {}
+extension MarketpaySection : Swift.Equatable {}
+extension MarketpaySection : Swift.Hashable {}
+extension VoucherTickeDismissal : Swift.Equatable {}
+extension VoucherTickeDismissal : Swift.Hashable {}
