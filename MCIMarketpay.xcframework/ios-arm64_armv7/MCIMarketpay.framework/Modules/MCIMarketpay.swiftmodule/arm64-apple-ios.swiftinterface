@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
-// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIMarketpay
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIMarketpay
 import Alamofire
 import Contacts
 import ContactsUI
@@ -9,13 +9,11 @@ import CoreLocation
 import Foundation
 import Kingfisher
 import MCIAuth
-import MCIAuthCore
 import MCICheckoutCore
 import MCIFoundation
 import MCIIssuerViewerCore
 import MCIKit
 import MCILogger
-import MCIMarketPayCore
 @_exported import MCIMarketpay
 import MapKit
 import Swift
@@ -176,7 +174,7 @@ extension MarketpayListVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelega
 @_hasMissingDesignatedInitializers final public class MarketPayConfig {
   public static let shared: MarketPayConfig
   final public var imageEmptyCategory: UIKit.UIImage?
-  final public var isSdk: Swift.Bool
+  final public var isSDK: Swift.Bool
   @objc deinit
 }
 public protocol MarketpayCellDelegate : AnyObject {
@@ -308,7 +306,7 @@ extension MarketpayCategoriesVC : UIKit.UICollectionViewDataSource, UIKit.UIColl
   @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-public struct MCIMarketPay : MarketPayable {
+public struct MCIMarketPay : MarketplaceInjectable {
   public init()
   public func present(_ controller: UIKit.UIViewController, with image: UIKit.UIImage?, transition: UIKit.UIModalTransitionStyle, completion: (() -> Swift.Void)?)
   public func voucher(activeAccounts: [MCIAccount]?, serviceTittle: Swift.String?, merchant: MCIMerchant) -> UIKit.UIViewController
@@ -317,7 +315,6 @@ public struct MCIMarketPay : MarketPayable {
   public func api99(activeAccounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
   public func webView(activeAcounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
   public func empty() -> UIKit.UIViewController
-  public func isSdk()
 }
 @objc @_inheritsConvenienceInitializers final public class CategoryListVC : MCIViewController {
   @objc override final public func viewDidLoad()
