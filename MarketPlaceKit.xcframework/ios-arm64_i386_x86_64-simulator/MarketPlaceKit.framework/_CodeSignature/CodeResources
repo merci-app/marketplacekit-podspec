@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MarketPlaceKit-Swift.h</key>
 		<data>
-		BjTizYBGK+vjU8tY5A80DRMV8Vs=
+		fP2fGyHTP2TQWrp9c3ao8wa7Kx0=
 		</data>
 		<key>Headers/MarketPlaceKit.h</key>
 		<data>
@@ -14,79 +14,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yBDN7G67vQOpArfsGVv9rBW52LQ=
+		boLdC+KjsHpSX8W6uMF8ZwQPjO8=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GQiwFlzsG4dJL3t3nVH/hqi059Q=
+		xrJ2piTWCjCUBH1qbjzgpS1m4o8=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wxESSSjWZPrKA0uE1uUPcIrct/k=
+		hx8yUaeQMYNJxD7CIe7VPx8z/GU=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vzb5/SSosvlrMJUwjyMuqXh3frE=
+		iVv9nKNSeqwMQhmxIy1O+2Wj6xc=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		GQiwFlzsG4dJL3t3nVH/hqi059Q=
+		xrJ2piTWCjCUBH1qbjzgpS1m4o8=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		wxESSSjWZPrKA0uE1uUPcIrct/k=
+		hx8yUaeQMYNJxD7CIe7VPx8z/GU=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Vzb5/SSosvlrMJUwjyMuqXh3frE=
+		iVv9nKNSeqwMQhmxIy1O+2Wj6xc=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1sEBmdiv7UwRuPTNzUt2Q3bS9YQ=
+		NAc4PWU+hrNf9DhIcIn3dncYUs0=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/I8Fb10XGIGcf8SJblc8QT9ssy0=
+		2s8eT3PtQzKfwrcyNx3JI3xK29I=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OOF28Nt/zPM8xmIHwn1HGVRJQTo=
+		0idbFzXuw7AfIF+Y4+pxtuVhGMk=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386.swiftdoc</key>
 		<data>
-		1sEBmdiv7UwRuPTNzUt2Q3bS9YQ=
+		NAc4PWU+hrNf9DhIcIn3dncYUs0=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386.swiftinterface</key>
 		<data>
-		/I8Fb10XGIGcf8SJblc8QT9ssy0=
+		2s8eT3PtQzKfwrcyNx3JI3xK29I=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		OOF28Nt/zPM8xmIHwn1HGVRJQTo=
+		0idbFzXuw7AfIF+Y4+pxtuVhGMk=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ppW3UP0/ZKzQX4eGhgMe2OVzp3o=
+		YlAhK8xSVtUMwMmMLJKFyYlI94A=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uWS57fvXZ/CEQpbdJ4ZwaXEeGWE=
+		aoBUgdS2ccVetZ2AtvTBRVuNIdc=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nEpa90ItAu7SekrE5JNA5WlXxCE=
+		la+TKO4WqaYH9CzqLzguSIsWcpo=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		ppW3UP0/ZKzQX4eGhgMe2OVzp3o=
+		YlAhK8xSVtUMwMmMLJKFyYlI94A=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		uWS57fvXZ/CEQpbdJ4ZwaXEeGWE=
+		aoBUgdS2ccVetZ2AtvTBRVuNIdc=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		nEpa90ItAu7SekrE5JNA5WlXxCE=
+		la+TKO4WqaYH9CzqLzguSIsWcpo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BjTizYBGK+vjU8tY5A80DRMV8Vs=
+			fP2fGyHTP2TQWrp9c3ao8wa7Kx0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gBvj7oYDE2sZMihCZg8muuK2FH6QdnWaac9d3g+9TJM=
+			OkFD5LhJo29Yt9uwiL8u7RMpWXHZd6bSevidaTorJD8=
 			</data>
 		</dict>
 		<key>Headers/MarketPlaceKit.h</key>
@@ -121,198 +121,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GQiwFlzsG4dJL3t3nVH/hqi059Q=
+			xrJ2piTWCjCUBH1qbjzgpS1m4o8=
 			</data>
 			<key>hash2</key>
 			<data>
-			px+JoNP0KW6qCxmgXT4T9klc6OvkJDZcVTLAyiRrr+c=
+			ONkz+3+ezP1Wt81ixZALIlj3jmHpuG28BRFVWRIjQwk=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wxESSSjWZPrKA0uE1uUPcIrct/k=
+			hx8yUaeQMYNJxD7CIe7VPx8z/GU=
 			</data>
 			<key>hash2</key>
 			<data>
-			KIuL1vRRXQUQbP7Kss6h3ctZYo3R5VEmqnjZWhn3oUQ=
+			nAt4b52Xtn83ur9TjNaUrW08MyRMVIXwKf9OqT+Reds=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vzb5/SSosvlrMJUwjyMuqXh3frE=
+			iVv9nKNSeqwMQhmxIy1O+2Wj6xc=
 			</data>
 			<key>hash2</key>
 			<data>
-			tlBGKNm9p+wiLhiIloMhvTkay+VvRwCIOCvoy7N3MoI=
+			FhJ03gG14G6UX+cJWNipncO6pWGqnT72uLyJq8Az3KU=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GQiwFlzsG4dJL3t3nVH/hqi059Q=
+			xrJ2piTWCjCUBH1qbjzgpS1m4o8=
 			</data>
 			<key>hash2</key>
 			<data>
-			px+JoNP0KW6qCxmgXT4T9klc6OvkJDZcVTLAyiRrr+c=
+			ONkz+3+ezP1Wt81ixZALIlj3jmHpuG28BRFVWRIjQwk=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wxESSSjWZPrKA0uE1uUPcIrct/k=
+			hx8yUaeQMYNJxD7CIe7VPx8z/GU=
 			</data>
 			<key>hash2</key>
 			<data>
-			KIuL1vRRXQUQbP7Kss6h3ctZYo3R5VEmqnjZWhn3oUQ=
+			nAt4b52Xtn83ur9TjNaUrW08MyRMVIXwKf9OqT+Reds=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vzb5/SSosvlrMJUwjyMuqXh3frE=
+			iVv9nKNSeqwMQhmxIy1O+2Wj6xc=
 			</data>
 			<key>hash2</key>
 			<data>
-			tlBGKNm9p+wiLhiIloMhvTkay+VvRwCIOCvoy7N3MoI=
+			FhJ03gG14G6UX+cJWNipncO6pWGqnT72uLyJq8Az3KU=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1sEBmdiv7UwRuPTNzUt2Q3bS9YQ=
+			NAc4PWU+hrNf9DhIcIn3dncYUs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			cyInbqLgJXU6zQ/I9XX7Cc39XjTbiFttBgbMPhL5ilM=
+			aYGc3ej8oJ3hpec2j5x6yVTHmUZQN/qAWE3+Tr1WJVc=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/I8Fb10XGIGcf8SJblc8QT9ssy0=
+			2s8eT3PtQzKfwrcyNx3JI3xK29I=
 			</data>
 			<key>hash2</key>
 			<data>
-			E9+3Dy/aSikart6n1nIVM+M7GLTf0zb6SHDEgEUIzKk=
+			yb/ieBd7Omu07X/CTMihlTroKuWAx9NgtF0IbX4ERs8=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OOF28Nt/zPM8xmIHwn1HGVRJQTo=
+			0idbFzXuw7AfIF+Y4+pxtuVhGMk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pO2+p5F39+IiAF1SKCwputbtbB62V9j6sUs+14yYF1U=
+			BOI6ssTpu9Yt0dc5cTxETfrOgHE5iTX74zLVOf+0s18=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1sEBmdiv7UwRuPTNzUt2Q3bS9YQ=
+			NAc4PWU+hrNf9DhIcIn3dncYUs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			cyInbqLgJXU6zQ/I9XX7Cc39XjTbiFttBgbMPhL5ilM=
+			aYGc3ej8oJ3hpec2j5x6yVTHmUZQN/qAWE3+Tr1WJVc=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/I8Fb10XGIGcf8SJblc8QT9ssy0=
+			2s8eT3PtQzKfwrcyNx3JI3xK29I=
 			</data>
 			<key>hash2</key>
 			<data>
-			E9+3Dy/aSikart6n1nIVM+M7GLTf0zb6SHDEgEUIzKk=
+			yb/ieBd7Omu07X/CTMihlTroKuWAx9NgtF0IbX4ERs8=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OOF28Nt/zPM8xmIHwn1HGVRJQTo=
+			0idbFzXuw7AfIF+Y4+pxtuVhGMk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pO2+p5F39+IiAF1SKCwputbtbB62V9j6sUs+14yYF1U=
+			BOI6ssTpu9Yt0dc5cTxETfrOgHE5iTX74zLVOf+0s18=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ppW3UP0/ZKzQX4eGhgMe2OVzp3o=
+			YlAhK8xSVtUMwMmMLJKFyYlI94A=
 			</data>
 			<key>hash2</key>
 			<data>
-			eq5Bky8K1wtaKaQ8N6/QUcxfkfOb3Pw6qrGfBx8KHzM=
+			5MGqahVrHFNjUaujjhD0w6rhWtxFZa9iNE5LGDZFoSg=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uWS57fvXZ/CEQpbdJ4ZwaXEeGWE=
+			aoBUgdS2ccVetZ2AtvTBRVuNIdc=
 			</data>
 			<key>hash2</key>
 			<data>
-			yVOTW/WxdMZlQ79FvtaPjokAG6hrQ3fHNAeWJMMYwk4=
+			brj42r7d9fg6RjTwlVklPXlbaN2ZrdgOwEz+A9pTyd4=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nEpa90ItAu7SekrE5JNA5WlXxCE=
+			la+TKO4WqaYH9CzqLzguSIsWcpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			18iB33YMWYEe2i/xqBSOLYHAshHcVOX/MACANOselGg=
+			7x8k/2aRbTHlPWq0SZvMWLPY2hm3FsRf3SU5VZ7hWtc=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ppW3UP0/ZKzQX4eGhgMe2OVzp3o=
+			YlAhK8xSVtUMwMmMLJKFyYlI94A=
 			</data>
 			<key>hash2</key>
 			<data>
-			eq5Bky8K1wtaKaQ8N6/QUcxfkfOb3Pw6qrGfBx8KHzM=
+			5MGqahVrHFNjUaujjhD0w6rhWtxFZa9iNE5LGDZFoSg=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uWS57fvXZ/CEQpbdJ4ZwaXEeGWE=
+			aoBUgdS2ccVetZ2AtvTBRVuNIdc=
 			</data>
 			<key>hash2</key>
 			<data>
-			yVOTW/WxdMZlQ79FvtaPjokAG6hrQ3fHNAeWJMMYwk4=
+			brj42r7d9fg6RjTwlVklPXlbaN2ZrdgOwEz+A9pTyd4=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nEpa90ItAu7SekrE5JNA5WlXxCE=
+			la+TKO4WqaYH9CzqLzguSIsWcpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			18iB33YMWYEe2i/xqBSOLYHAshHcVOX/MACANOselGg=
+			7x8k/2aRbTHlPWq0SZvMWLPY2hm3FsRf3SU5VZ7hWtc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
