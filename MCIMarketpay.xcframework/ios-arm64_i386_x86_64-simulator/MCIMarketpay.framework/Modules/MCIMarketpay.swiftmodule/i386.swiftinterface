@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIMarketpay
 import Alamofire
 import Contacts
@@ -32,10 +32,10 @@ public enum CellphoneRechargeTickeDismissal {
   case unwindToHome
   case dismissToRoot
   public static func == (a: CellphoneRechargeTickeDismissal, b: CellphoneRechargeTickeDismissal) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc @_inheritsConvenienceInitializers final public class CellphoneRechargeTicketVC : MCIViewController, Identifiable {
   final public var merchant: MCIMerchant?
@@ -121,10 +121,10 @@ public enum TVRechargeTicketDismissal {
   case unwindToHome
   case dismissToRoot
   public static func == (a: TVRechargeTicketDismissal, b: TVRechargeTicketDismissal) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc @_inheritsConvenienceInitializers final public class TVRechargeTicketVC : MCIViewController, Identifiable {
   final public var merchant: MCIMerchant?
@@ -203,10 +203,10 @@ public enum TVRechargeSection {
   case input
   case error
   public static func == (a: TVRechargeSection, b: TVRechargeSection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc @_inheritsConvenienceInitializers final public class TVRechargeVC : MCIViewController, Identifiable {
   final public var activeAccounts: [MCIAccount]?
@@ -250,10 +250,10 @@ public enum MarketpaySection {
   case popular
   case favorites
   public static func == (a: MarketpaySection, b: MarketpaySection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc @_inheritsConvenienceInitializers final public class MarketpayVC : MCIViewController, Identifiable {
   final public var requireStyle: MCINavigationStyle {
@@ -366,10 +366,10 @@ public enum VoucherTickeDismissal {
   case unwindToHome
   case dismissRoot
   public static func == (a: VoucherTickeDismissal, b: VoucherTickeDismissal) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc @_inheritsConvenienceInitializers final public class VoucherTicketVC : MCIViewController, Identifiable {
   final public var merchant: MCIMerchant?
