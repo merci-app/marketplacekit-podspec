@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MCIMarketpay
 import Alamofire
 import Contacts
@@ -19,13 +19,14 @@ import MapKit
 import Swift
 import UIKit
 import WebKit
-@objc @_inheritsConvenienceInitializers final public class WalletSectionHeaderView : UIKit.UITableViewHeaderFooterView, Identifiable, NibReusable {
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class WalletSectionHeaderView : UIKit.UITableViewHeaderFooterView, Identifiable, NibReusable {
   @objc override final public func awakeFromNib()
-  @objc override final public func prepareForReuse()
-  final public func configure(with title: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) final public func configure(with title: Swift.String)
   @objc deinit
-  @objc override dynamic public init(reuseIdentifier: Swift.String?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 public enum CellphoneRechargeTickeDismissal {
   case dismiss
@@ -37,84 +38,84 @@ public enum CellphoneRechargeTickeDismissal {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers final public class CellphoneRechargeTicketVC : MCIViewController, Identifiable {
-  final public var merchant: MCIMerchant?
-  final public var transaction: MCICellphoneRechargeTransaction?
-  final public var dismissal: CellphoneRechargeTickeDismissal
-  @objc override final public func viewDidLoad()
-  @objc override final public func viewDidLayoutSubviews()
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CellphoneRechargeTicketVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var merchant: MCIMerchant?
+  @_Concurrency.MainActor(unsafe) final public var transaction: MCICellphoneRechargeTransaction?
+  @_Concurrency.MainActor(unsafe) final public var dismissal: CellphoneRechargeTickeDismissal
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers final public class VoucherVC : MCIViewController, Identifiable {
-  final public var activeAccounts: [MCIAccount]?
-  final public var merchant: MCIMerchant?
-  final public var serviceTitle: Swift.String?
-  final public var dismissMode: VoucherTickeDismissal
-  final public var requireStyle: MCINavigationStyle {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class VoucherVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var activeAccounts: [MCIAccount]?
+  @_Concurrency.MainActor(unsafe) final public var merchant: MCIMerchant?
+  @_Concurrency.MainActor(unsafe) final public var serviceTitle: Swift.String?
+  @_Concurrency.MainActor(unsafe) final public var dismissMode: VoucherTickeDismissal
+  @_Concurrency.MainActor(unsafe) final public var requireStyle: MCINavigationStyle {
     get
   }
-  @objc override final public func viewDidLoad()
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
-  @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension VoucherVC : UIKit.UITableViewDataSource {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
 }
 extension VoucherVC : UIKit.UITableViewDelegate {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 extension VoucherVC : MCICoverImageDelegate {
-  final public func coverImageDidTapOnHistory()
-  final public func coverImageDidTapOnParticipantingStores()
+  @_Concurrency.MainActor(unsafe) final public func coverImageDidTapOnHistory()
+  @_Concurrency.MainActor(unsafe) final public func coverImageDidTapOnParticipantingStores()
 }
 extension VoucherVC : CheckoutDelegate {
-  final public func didComplete(with object: Any?)
+  @_Concurrency.MainActor(unsafe) final public func didComplete(with object: Any?)
 }
 extension VoucherVC : UIKit.UIScrollViewDelegate {
-  @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
 }
-@objc @_inheritsConvenienceInitializers final public class WebPaymentReceiptVC : MCIViewController, Identifiable {
-  final public var voucher: MCIVoucherTransaction?
-  @objc override final public func viewDidLoad()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class WebPaymentReceiptVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var voucher: MCIVoucherTransaction?
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers final public class Api99TransactionHistoryVC : MCIViewController, Identifiable {
-  @objc override final public func viewDidLoad()
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class Api99TransactionHistoryVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension Api99TransactionHistoryVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
-@objc @_inheritsConvenienceInitializers final public class MarketpayCategoriesTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MarketpayCategoriesTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
   @objc override final public func awakeFromNib()
-  @objc override final public func systemLayoutSizeFitting(_ targetSize: CoreGraphics.CGSize, withHorizontalFittingPriority horizontalFittingPriority: UIKit.UILayoutPriority, verticalFittingPriority: UIKit.UILayoutPriority) -> CoreGraphics.CGSize
-  final public func configure(with categories: [MCICategory], limit: Swift.Int?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func systemLayoutSizeFitting(_ targetSize: CoreGraphics.CGSize, withHorizontalFittingPriority horizontalFittingPriority: UIKit.UILayoutPriority, verticalFittingPriority: UIKit.UILayoutPriority) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) final public func configure(with categories: [MCICategory], limit: Swift.Int?)
   @objc deinit
   @available(iOS 3.0, *)
-  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension MarketpayCategoriesTableCell : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate {
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
 }
 public enum TVRechargeTicketDismissal {
   case dismiss
@@ -126,50 +127,50 @@ public enum TVRechargeTicketDismissal {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers final public class TVRechargeTicketVC : MCIViewController, Identifiable {
-  final public var merchant: MCIMerchant?
-  final public var transaction: MCITvRechargeTransaction?
-  final public var dismissal: TVRechargeTicketDismissal
-  @objc override final public func viewDidLoad()
-  @objc override final public func viewDidLayoutSubviews()
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TVRechargeTicketVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var merchant: MCIMerchant?
+  @_Concurrency.MainActor(unsafe) final public var transaction: MCITvRechargeTransaction?
+  @_Concurrency.MainActor(unsafe) final public var dismissal: TVRechargeTicketDismissal
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-extension UIStoryboard {
-  public class var marketpay: UIKit.UIStoryboard {
+extension UIKit.UIStoryboard {
+  @_Concurrency.MainActor(unsafe) public class var marketpay: UIKit.UIStoryboard {
     get
   }
-  public class var category: UIKit.UIStoryboard {
+  @_Concurrency.MainActor(unsafe) public class var category: UIKit.UIStoryboard {
     get
   }
-  public class var webPayment: UIKit.UIStoryboard {
+  @_Concurrency.MainActor(unsafe) public class var webPayment: UIKit.UIStoryboard {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers final public class CategoryGroupVC : MCIViewController, Identifiable {
-  @objc override final public func viewDidLoad()
-  final public func configure(with category: MCICategory)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CategoryGroupVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) final public func configure(with category: MCICategory)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension CategoryGroupVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
 }
-@objc @_inheritsConvenienceInitializers final public class MarketpayListVC : MCIViewController, Identifiable {
-  final public var merchants: [MCIMerchant]
-  @objc override final public func viewDidLoad()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MarketpayListVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var merchants: [MCIMerchant]
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension MarketpayListVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 @_hasMissingDesignatedInitializers final public class MarketPayConfig {
   public static let shared: MarketPayConfig
@@ -180,19 +181,19 @@ extension MarketpayListVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelega
 public protocol MarketpayCellDelegate : AnyObject {
   func segue(with identifier: Swift.String, sender: Any?)
 }
-@objc @_inheritsConvenienceInitializers final public class MarketpayHorizontalListTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
-  weak final public var delegate: MarketpayCellDelegate?
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MarketpayHorizontalListTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: MarketpayCellDelegate?
   @objc override final public func awakeFromNib()
-  final public func configure(with title: Swift.String, section: MarketpaySection, merchants: [MCIMerchant], limit: Swift.Int?)
+  @_Concurrency.MainActor(unsafe) final public func configure(with title: Swift.String, section: MarketpaySection, merchants: [MCIMerchant], limit: Swift.Int?)
   @objc deinit
   @available(iOS 3.0, *)
-  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension MarketpayHorizontalListTableCell : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate {
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
 }
 public enum TVRechargeSection {
   case cover
@@ -208,39 +209,39 @@ public enum TVRechargeSection {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers final public class TVRechargeVC : MCIViewController, Identifiable {
-  final public var activeAccounts: [MCIAccount]?
-  final public var merchant: MCIMerchant?
-  final public var serviceTitle: Swift.String?
-  final public var dismissMode: TVRechargeTicketDismissal
-  final public var requireStyle: MCINavigationStyle {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TVRechargeVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var activeAccounts: [MCIAccount]?
+  @_Concurrency.MainActor(unsafe) final public var merchant: MCIMerchant?
+  @_Concurrency.MainActor(unsafe) final public var serviceTitle: Swift.String?
+  @_Concurrency.MainActor(unsafe) final public var dismissMode: TVRechargeTicketDismissal
+  @_Concurrency.MainActor(unsafe) final public var requireStyle: MCINavigationStyle {
     get
   }
-  @objc override final public func viewDidLoad()
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
-  @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension TVRechargeVC : UIKit.UITableViewDataSource {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
 }
 extension TVRechargeVC : UIKit.UITableViewDelegate {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 extension TVRechargeVC : MCICoverImageDelegate {
-  final public func coverImageDidTapOnHistory()
+  @_Concurrency.MainActor(unsafe) final public func coverImageDidTapOnHistory()
 }
 extension TVRechargeVC : CheckoutDelegate {
-  final public func didComplete(with object: Any?)
+  @_Concurrency.MainActor(unsafe) final public func didComplete(with object: Any?)
 }
 extension TVRechargeVC : UIKit.UIScrollViewDelegate {
-  @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
 }
 public enum MarketpaySection {
   case none
@@ -255,56 +256,56 @@ public enum MarketpaySection {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers final public class MarketpayVC : MCIViewController, Identifiable {
-  final public var requireStyle: MCINavigationStyle {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MarketpayVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var requireStyle: MCINavigationStyle {
     get
   }
-  @objc override final public func viewDidLoad()
-  @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension MarketpayVC : UIKit.UISearchBarDelegate {
-  @objc final public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
-  @objc final public func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
-  @objc final public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
-  @objc final public func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc final public func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc final public func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc final public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc final public func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
 }
 extension MarketpayVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
-  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreGraphics.CGFloat
-  @objc final public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
-  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
-  @objc final public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
 }
 extension MarketpayVC : MarketpayCellDelegate {
-  final public func segue(with identifier: Swift.String, sender: Any?)
+  @_Concurrency.MainActor(unsafe) final public func segue(with identifier: Swift.String, sender: Any?)
 }
-@objc @_inheritsConvenienceInitializers final public class MarketpayCategoriesVC : MCIViewController, Identifiable {
-  final public var categories: [MCICategory]
-  @objc override final public func viewDidLoad()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MarketpayCategoriesVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var categories: [MCICategory]
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension MarketpayCategoriesVC : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate {
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
-  @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
 }
-@objc @_inheritsConvenienceInitializers final public class MarketpayBannerTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
-  weak final public var delegate: MarketpayCellDelegate?
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MarketpayBannerTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
+  @_Concurrency.MainActor(unsafe) weak final public var delegate: MarketpayCellDelegate?
   @objc override final public func awakeFromNib()
-  final public func configure(with image: Swift.String?)
+  @_Concurrency.MainActor(unsafe) final public func configure(with image: Swift.String?)
   @objc deinit
   @available(iOS 3.0, *)
-  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 public struct MCIMarketPay : MarketplaceInjectable {
   public init()
@@ -316,50 +317,50 @@ public struct MCIMarketPay : MarketplaceInjectable {
   public func webView(activeAcounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
   public func empty() -> UIKit.UIViewController
 }
-@objc @_inheritsConvenienceInitializers final public class CategoryListVC : MCIViewController {
-  @objc override final public func viewDidLoad()
-  final public func configure(with category: MCICategory)
-  final public func configure(with subcategory: MCISubCategory)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CategoryListVC : MCIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) final public func configure(with category: MCICategory)
+  @_Concurrency.MainActor(unsafe) final public func configure(with subcategory: MCISubCategory)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension CategoryListVC : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
-@objc @_inheritsConvenienceInitializers final public class CellphoneRechargeVC : MCIViewController, Identifiable {
-  final public var dismissMode: CellphoneRechargeTickeDismissal
-  final public var requireStyle: MCINavigationStyle {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CellphoneRechargeVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var dismissMode: CellphoneRechargeTickeDismissal
+  @_Concurrency.MainActor(unsafe) final public var requireStyle: MCINavigationStyle {
     get
   }
-  @objc override final public func viewDidLoad()
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
-  @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
-  final public func configure(with category: MCICategory?, merchant: MCIMerchant?, activeAccounts: [MCIAccount]?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func canPerformUnwindSegueAction(_ action: ObjectiveC.Selector, from fromViewController: UIKit.UIViewController, withSender sender: Any) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public func configure(with category: MCICategory?, merchant: MCIMerchant?, activeAccounts: [MCIAccount]?)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension CellphoneRechargeVC : UIKit.UITableViewDataSource {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
 }
 extension CellphoneRechargeVC : UIKit.UITableViewDelegate {
-  @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
-  @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 extension CellphoneRechargeVC : MCICoverImageDelegate {
-  final public func coverImageDidTapOnHistory()
+  @_Concurrency.MainActor(unsafe) final public func coverImageDidTapOnHistory()
 }
 extension CellphoneRechargeVC : UIKit.UIScrollViewDelegate {
-  @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
 }
 extension CellphoneRechargeVC : CheckoutDelegate {
-  final public func didComplete(with object: Any?)
+  @_Concurrency.MainActor(unsafe) final public func didComplete(with object: Any?)
 }
 public enum VoucherTickeDismissal {
   case dismiss
@@ -371,45 +372,45 @@ public enum VoucherTickeDismissal {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers final public class VoucherTicketVC : MCIViewController, Identifiable {
-  final public var merchant: MCIMerchant?
-  final public var voucher: MCIVoucherTransaction?
-  final public var dismissal: VoucherTickeDismissal
-  @objc override final public func viewDidLoad()
-  @objc override final public func viewDidLayoutSubviews()
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class VoucherTicketVC : MCIViewController, Identifiable {
+  @_Concurrency.MainActor(unsafe) final public var merchant: MCIMerchant?
+  @_Concurrency.MainActor(unsafe) final public var voucher: MCIVoucherTransaction?
+  @_Concurrency.MainActor(unsafe) final public var dismissal: VoucherTickeDismissal
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers final public class CategoryEmptyVC : MCIViewController {
-  @objc override final public func viewDidLoad()
-  final public func configure(with category: MCICategory)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CategoryEmptyVC : MCIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) final public func configure(with category: MCICategory)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers final public class Api99ServiceVC : MCIViewController {
-  final public var activeAccounts: [MCIAccount]?
-  final public var merchant: MCIMerchant?
-  @objc override final public func viewDidLoad()
-  @objc override final public func viewWillAppear(_ animated: Swift.Bool)
-  @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class Api99ServiceVC : MCIViewController {
+  @_Concurrency.MainActor(unsafe) final public var activeAccounts: [MCIAccount]?
+  @_Concurrency.MainActor(unsafe) final public var merchant: MCIMerchant?
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func prepare(for segue: UIKit.UIStoryboardSegue, sender: Any?)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension Api99ServiceVC : MapKit.MKMapViewDelegate {
-  @objc final public func mapView(_ mapView: MapKit.MKMapView, rendererFor overlay: MapKit.MKOverlay) -> MapKit.MKOverlayRenderer
-  @objc final public func mapView(_ mapView: MapKit.MKMapView, viewFor annotation: MapKit.MKAnnotation) -> MapKit.MKAnnotationView?
-  @objc final public func mapView(_ mapView: MapKit.MKMapView, didSelect view: MapKit.MKAnnotationView)
+  @_Concurrency.MainActor(unsafe) @objc final public func mapView(_ mapView: MapKit.MKMapView, rendererFor overlay: MapKit.MKOverlay) -> MapKit.MKOverlayRenderer
+  @_Concurrency.MainActor(unsafe) @objc final public func mapView(_ mapView: MapKit.MKMapView, viewFor annotation: MapKit.MKAnnotation) -> MapKit.MKAnnotationView?
+  @_Concurrency.MainActor(unsafe) @objc final public func mapView(_ mapView: MapKit.MKMapView, didSelect view: MapKit.MKAnnotationView)
 }
-@objc @_inheritsConvenienceInitializers final public class MarketpayDividerTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MarketpayDividerTableCell : UIKit.UITableViewCell, NibReusable, Identifiable {
   @objc override final public func awakeFromNib()
   @objc deinit
   @available(iOS 3.0, *)
-  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension CellphoneRechargeTickeDismissal : Swift.Equatable {}
 extension CellphoneRechargeTickeDismissal : Swift.Hashable {}
