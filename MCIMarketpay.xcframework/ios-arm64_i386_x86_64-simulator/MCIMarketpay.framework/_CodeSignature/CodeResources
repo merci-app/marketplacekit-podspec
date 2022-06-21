@@ -470,7 +470,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		N/I8ewinvMqaMw4x4zsIu0G3V+4=
+		t6GtZGE8x6FCVl2lxSUxCIFHOM8=
 		</data>
 		<key>Marketpay.storyboardc/Info.plist</key>
 		<data>
@@ -602,7 +602,7 @@
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3U39Gq3pZgObt/AEuYnWqeF/VVg=
+		HIk6lJXS7CJ4L9+GeqfQpgdWJW0=
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -614,7 +614,7 @@
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VnDbhYPCVPfjx7ycDjQxa1ewp/A=
+		0WVKA2hngbvcC7h3NRcX+zhOkuA=
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -626,7 +626,7 @@
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GdwoEI1JrVVwTytzqOEYWXVkeB0=
+		aAJriw9G/YM3rqRbHxdrltHoPE4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2631,11 +2631,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3U39Gq3pZgObt/AEuYnWqeF/VVg=
+			HIk6lJXS7CJ4L9+GeqfQpgdWJW0=
 			</data>
 			<key>hash2</key>
 			<data>
-			k6bBsPWM/0vEceYasBATk0Gvvw51FadO7BwdsdwJTS4=
+			vUMRgs6CXAnot3cF9VtszMML8xU78TmA3kXI1cKI2YQ=
 			</data>
 		</dict>
 		<key>Modules/MCIMarketpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -2664,11 +2664,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VnDbhYPCVPfjx7ycDjQxa1ewp/A=
+			0WVKA2hngbvcC7h3NRcX+zhOkuA=
 			</data>
 			<key>hash2</key>
 			<data>
-			jkqx2gAtYebhMPvIZjx7LlijldQSAUFGW/mdndabj5Q=
+			euJQYq4wRVAfvbl9JdOgk7S85DyBO2JVn62Ynm9r/TI=
 			</data>
 		</dict>
 		<key>Modules/MCIMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2697,11 +2697,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GdwoEI1JrVVwTytzqOEYWXVkeB0=
+			aAJriw9G/YM3rqRbHxdrltHoPE4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZFNvnf3ioZF6AbERoxKwqFGrPjIc7QjbRr8JunG7o4o=
+			D/aUT+8Su3vtPndo5E7GCoTmDkktlTauamocqQbteaU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
