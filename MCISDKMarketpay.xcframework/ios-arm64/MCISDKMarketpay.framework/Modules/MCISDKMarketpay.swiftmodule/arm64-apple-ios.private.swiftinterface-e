@@ -231,7 +231,7 @@ extension MarketpayCategoriesVC : UIKit.UICollectionViewDataSource, UIKit.UIColl
 public struct MCISDKMarketpay : MarketplaceInjectable {
   public init()
   public func present(_ controller: UIKit.UIViewController, title: Swift.String, image: UIKit.UIImage? = nil, transition: UIKit.UIModalTransitionStyle, completion: (() -> Swift.Void)?)
-  public func presentEmbed(_ controller: inout UIKit.UIViewController, with image: UIKit.UIImage?, transition: UIKit.UIModalTransitionStyle, title: Swift.String, tabImage: UIKit.UIImage, completion: (() -> Swift.Void)?)
+  public func embed(transition: UIKit.UIModalTransitionStyle, title: Swift.String, navImage: UIKit.UIImage?, tabImage: UIKit.UIImage) -> UIKit.UIViewController
   public func voucher(activeAccounts: [MCIAccount]?, serviceTittle: Swift.String?, merchant: MCIMerchant) -> UIKit.UIViewController
   public func cellphoneRecharge(activeAccounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
   public func webView(activeAcounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController

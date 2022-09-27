@@ -8354,20 +8354,26 @@
           },
           {
             "kind": "Function",
-            "name": "presentEmbed",
-            "printedName": "presentEmbed(_:with:transition:title:tabImage:completion:)",
+            "name": "embed",
+            "printedName": "embed(transition:title:navImage:tabImage:)",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
               {
                 "kind": "TypeNominal",
                 "name": "UIViewController",
                 "printedName": "UIKit.UIViewController",
-                "paramValueOwnership": "InOut",
                 "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIModalTransitionStyle",
+                "printedName": "UIKit.UIModalTransitionStyle",
+                "usr": "c:@E@UIModalTransitionStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -8385,51 +8391,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIModalTransitionStyle",
-                "printedName": "UIKit.UIModalTransitionStyle",
-                "usr": "c:@E@UIModalTransitionStyle"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "UIImage",
                 "printedName": "UIKit.UIImage",
                 "usr": "c:objc(cs)UIImage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15MCISDKMarketpayAAV12presentEmbed_4with10transition5title8tabImage10completionySo16UIViewControllerCz_So7UIImageCSgSo22UIModalTransitionStyleVSSALyycSgtF",
-            "mangledName": "$s15MCISDKMarketpayAAV12presentEmbed_4with10transition5title8tabImage10completionySo16UIViewControllerCz_So7UIImageCSgSo22UIModalTransitionStyleVSSALyycSgtF",
+            "usr": "s:15MCISDKMarketpayAAV5embed10transition5title8navImage03tabF0So16UIViewControllerCSo22UIModalTransitionStyleV_SSSo7UIImageCSgAMtF",
+            "mangledName": "$s15MCISDKMarketpayAAV5embed10transition5title8navImage03tabF0So16UIViewControllerCSo22UIModalTransitionStyleV_SSSo7UIImageCSgAMtF",
             "moduleName": "MCISDKMarketpay",
             "declAttributes": [
               "AccessControl"
