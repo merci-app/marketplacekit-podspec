@@ -491,23 +491,6 @@
       },
       {
         "kind": "Import",
-        "name": "MCISDKFoundation",
-        "printedName": "MCISDKFoundation",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKCheckoutCore",
-        "printedName": "MCISDKCheckoutCore",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2802,384 +2785,6 @@
         "printedName": "MCISDKLogger",
         "declKind": "Import",
         "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKLogger",
-        "printedName": "MCISDKLogger",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKFoundation",
-        "printedName": "MCISDKFoundation",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKKit",
-        "printedName": "MCISDKKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "WebPaymentReceiptVC",
-        "printedName": "WebPaymentReceiptVC",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "voucher",
-            "printedName": "voucher",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MCISDKFoundation.MCIVoucherTransaction?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MCIVoucherTransaction",
-                    "printedName": "MCISDKFoundation.MCIVoucherTransaction",
-                    "usr": "s:16MCISDKFoundation21MCIVoucherTransactionC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15MCISDKMarketpay19WebPaymentReceiptVCC7voucher16MCISDKFoundation21MCIVoucherTransactionCSgvp",
-            "mangledName": "$s15MCISDKMarketpay19WebPaymentReceiptVCC7voucher16MCISDKFoundation21MCIVoucherTransactionCSgvp",
-            "moduleName": "MCISDKMarketpay",
-            "declAttributes": [
-              "Custom",
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "MCISDKFoundation.MCIVoucherTransaction?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MCIVoucherTransaction",
-                        "printedName": "MCISDKFoundation.MCIVoucherTransaction",
-                        "usr": "s:16MCISDKFoundation21MCIVoucherTransactionC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MCISDKMarketpay19WebPaymentReceiptVCC7voucher16MCISDKFoundation21MCIVoucherTransactionCSgvg",
-                "mangledName": "$s15MCISDKMarketpay19WebPaymentReceiptVCC7voucher16MCISDKFoundation21MCIVoucherTransactionCSgvg",
-                "moduleName": "MCISDKMarketpay",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "MCISDKFoundation.MCIVoucherTransaction?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MCIVoucherTransaction",
-                        "printedName": "MCISDKFoundation.MCIVoucherTransaction",
-                        "usr": "s:16MCISDKFoundation21MCIVoucherTransactionC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MCISDKMarketpay19WebPaymentReceiptVCC7voucher16MCISDKFoundation21MCIVoucherTransactionCSgvs",
-                "mangledName": "$s15MCISDKMarketpay19WebPaymentReceiptVCC7voucher16MCISDKFoundation21MCIVoucherTransactionCSgvs",
-                "moduleName": "MCISDKMarketpay",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15MCISDKMarketpay19WebPaymentReceiptVCC7voucher16MCISDKFoundation21MCIVoucherTransactionCSgvM",
-                "mangledName": "$s15MCISDKMarketpay19WebPaymentReceiptVCC7voucher16MCISDKFoundation21MCIVoucherTransactionCSgvM",
-                "moduleName": "MCISDKMarketpay",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "viewDidLoad",
-            "printedName": "viewDidLoad()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@MCISDKMarketpay@objc(cs)WebPaymentReceiptVC(im)viewDidLoad",
-            "mangledName": "$s15MCISDKMarketpay19WebPaymentReceiptVCC11viewDidLoadyyF",
-            "moduleName": "MCISDKMarketpay",
-            "overriding": true,
-            "objc_name": "viewDidLoad",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "Override",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nibName:bundle:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WebPaymentReceiptVC",
-                "printedName": "MCISDKMarketpay.WebPaymentReceiptVC",
-                "usr": "c:@M@MCISDKMarketpay@objc(cs)WebPaymentReceiptVC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Bundle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bundle",
-                    "printedName": "Foundation.Bundle",
-                    "usr": "c:objc(cs)NSBundle"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@MCISDKMarketpay@objc(cs)WebPaymentReceiptVC(im)initWithNibName:bundle:",
-            "mangledName": "$s15MCISDKMarketpay19WebPaymentReceiptVCC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-            "moduleName": "MCISDKMarketpay",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithNibName:bundle:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MCISDKMarketpay.WebPaymentReceiptVC?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WebPaymentReceiptVC",
-                    "printedName": "MCISDKMarketpay.WebPaymentReceiptVC",
-                    "usr": "c:@M@MCISDKMarketpay@objc(cs)WebPaymentReceiptVC"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@MCISDKMarketpay@objc(cs)WebPaymentReceiptVC(im)initWithCoder:",
-            "mangledName": "$s15MCISDKMarketpay19WebPaymentReceiptVCC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "MCISDKMarketpay",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@MCISDKMarketpay@objc(cs)WebPaymentReceiptVC",
-        "mangledName": "$s15MCISDKMarketpay19WebPaymentReceiptVCC",
-        "moduleName": "MCISDKMarketpay",
-        "declAttributes": [
-          "Custom",
-          "Final",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)UIViewController",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "MCINavigationStylable",
-            "printedName": "MCINavigationStylable",
-            "usr": "s:9MCISDKKit21MCINavigationStylableP",
-            "mangledName": "$s9MCISDKKit21MCINavigationStylableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MCIViewControllerProtocol",
-            "printedName": "MCIViewControllerProtocol",
-            "usr": "s:9MCISDKKit25MCIViewControllerProtocolP",
-            "mangledName": "$s9MCISDKKit25MCIViewControllerProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "usr": "s:9MCISDKKit12IdentifiableP",
-            "mangledName": "$s9MCISDKKit12IdentifiableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -5756,44 +5361,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKLogger",
-        "printedName": "MCISDKLogger",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKFoundation",
-        "printedName": "MCISDKFoundation",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKKit",
-        "printedName": "MCISDKKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
         "name": "MCISDKFoundation",
         "printedName": "MCISDKFoundation",
         "declKind": "Import",
@@ -5837,72 +5404,6 @@
         "kind": "Import",
         "name": "MCISDKLogger",
         "printedName": "MCISDKLogger",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKLogger",
-        "printedName": "MCISDKLogger",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKFoundation",
-        "printedName": "MCISDKFoundation",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKKit",
-        "printedName": "MCISDKKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKCheckoutCore",
-        "printedName": "MCISDKCheckoutCore",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKIssuerViewerCore",
-        "printedName": "MCISDKIssuerViewerCore",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKAuth",
-        "printedName": "MCISDKAuth",
         "declKind": "Import",
         "moduleName": "MCISDKMarketpay"
       },
@@ -8354,20 +7855,26 @@
           },
           {
             "kind": "Function",
-            "name": "presentEmbed",
-            "printedName": "presentEmbed(_:with:transition:title:tabImage:completion:)",
+            "name": "embed",
+            "printedName": "embed(transition:title:navImage:tabImage:)",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
               {
                 "kind": "TypeNominal",
                 "name": "UIViewController",
                 "printedName": "UIKit.UIViewController",
-                "paramValueOwnership": "InOut",
                 "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIModalTransitionStyle",
+                "printedName": "UIKit.UIModalTransitionStyle",
+                "usr": "c:@E@UIModalTransitionStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -8385,51 +7892,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIModalTransitionStyle",
-                "printedName": "UIKit.UIModalTransitionStyle",
-                "usr": "c:@E@UIModalTransitionStyle"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "UIImage",
                 "printedName": "UIKit.UIImage",
                 "usr": "c:objc(cs)UIImage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15MCISDKMarketpayAAV12presentEmbed_4with10transition5title8tabImage10completionySo16UIViewControllerCz_So7UIImageCSgSo22UIModalTransitionStyleVSSALyycSgtF",
-            "mangledName": "$s15MCISDKMarketpayAAV12presentEmbed_4with10transition5title8tabImage10completionySo16UIViewControllerCz_So7UIImageCSgSo22UIModalTransitionStyleVSSALyycSgtF",
+            "usr": "s:15MCISDKMarketpayAAV5embed10transition5title8navImage03tabF0So16UIViewControllerCSo22UIModalTransitionStyleV_SSSo7UIImageCSgAMtF",
+            "mangledName": "$s15MCISDKMarketpayAAV5embed10transition5title8navImage03tabF0So16UIViewControllerCSo22UIModalTransitionStyleV_SSSo7UIImageCSgAMtF",
             "moduleName": "MCISDKMarketpay",
             "declAttributes": [
               "AccessControl"
@@ -8542,55 +8012,6 @@
             "declKind": "Func",
             "usr": "s:15MCISDKMarketpayAAV17cellphoneRecharge14activeAccounts8merchantSo16UIViewControllerCSay16MCISDKFoundation10MCIAccountCGSg_AH11MCIMerchantCtF",
             "mangledName": "$s15MCISDKMarketpayAAV17cellphoneRecharge14activeAccounts8merchantSo16UIViewControllerCSay16MCISDKFoundation10MCIAccountCGSg_AH11MCIMerchantCtF",
-            "moduleName": "MCISDKMarketpay",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "webView",
-            "printedName": "webView(activeAcounts:merchant:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[MCISDKFoundation.MCIAccount]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[MCISDKFoundation.MCIAccount]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MCIAccount",
-                        "printedName": "MCISDKFoundation.MCIAccount",
-                        "usr": "s:16MCISDKFoundation10MCIAccountC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MCIMerchant",
-                "printedName": "MCISDKFoundation.MCIMerchant",
-                "usr": "s:16MCISDKFoundation11MCIMerchantC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15MCISDKMarketpayAAV7webView13activeAcounts8merchantSo16UIViewControllerCSay16MCISDKFoundation10MCIAccountCGSg_AH11MCIMerchantCtF",
-            "mangledName": "$s15MCISDKMarketpayAAV7webView13activeAcounts8merchantSo16UIViewControllerCSay16MCISDKFoundation10MCIAccountCGSg_AH11MCIMerchantCtF",
             "moduleName": "MCISDKMarketpay",
             "declAttributes": [
               "AccessControl"
@@ -11414,30 +10835,6 @@
       },
       {
         "kind": "Import",
-        "name": "MCISDKKit",
-        "printedName": "MCISDKKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "MCISDKLogger",
-        "printedName": "MCISDKLogger",
-        "declKind": "Import",
-        "moduleName": "MCISDKMarketpay"
-      },
-      {
-        "kind": "Import",
         "name": "MCISDKFoundation",
         "printedName": "MCISDKFoundation",
         "declKind": "Import",
@@ -12300,34 +11697,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Services\/WebPayment\/WebPaymentVC.swift",
-      "kind": "BooleanLiteral",
-      "offset": 602,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Services\/WebPayment\/WebPaymentVC.swift",
-      "kind": "BooleanLiteral",
-      "offset": 694,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Services\/WebPayment\/WebPaymentVC.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1174,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Services\/WebPayment\/WebPaymentVC.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2433,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Services\/Voucher\/API\/MCIParticipatingStoreAddress.swift",
       "kind": "FloatLiteral",
       "offset": 1977,
@@ -12435,21 +11804,21 @@
     {
       "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Sections\/Marketpay\/MarketpayVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 12419,
+      "offset": 12214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Sections\/Marketpay\/MarketpayVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 12815,
+      "offset": 12610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Sections\/Marketpay\/MarketpayVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 12846,
+      "offset": 12641,
       "length": 5,
       "value": "false"
     },
@@ -12536,13 +11905,6 @@
       "offset": 626,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/rodrigobrauwers\/Developer\/legacy-sdk-ios\/MerciWorkspace\/Frameworks\/MCISDKMarketpay\/MCISDKMarketpay\/Services\/WebPayment\/WebPaymentCodeVC.swift",
-      "kind": "FloatLiteral",
-      "offset": 791,
-      "length": 4,
-      "value": "0.35"
     }
   ]
 }

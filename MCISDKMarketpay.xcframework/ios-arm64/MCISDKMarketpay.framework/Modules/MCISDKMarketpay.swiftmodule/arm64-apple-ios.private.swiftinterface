@@ -8,7 +8,6 @@ import ContactsUI
 import CoreLocation
 import Foundation
 import Kingfisher
-import MCISDKAuth
 import MCISDKCheckoutCore
 import MCISDKFoundation
 import MCISDKIssuerViewerCore
@@ -17,7 +16,6 @@ import MCISDKLogger
 @_exported import MCISDKMarketpay
 import Swift
 import UIKit
-import WebKit
 import _Concurrency
 import _StringProcessing
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class WalletSectionHeaderView : UIKit.UITableViewHeaderFooterView, MCISDKKit.Identifiable, MCISDKKit.NibReusable {
@@ -83,13 +81,6 @@ extension VoucherVC : CheckoutDelegate {
 }
 extension VoucherVC : UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc final public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class WebPaymentReceiptVC : MCISDKKit.MCIViewController, MCISDKKit.Identifiable {
-  @_Concurrency.MainActor(unsafe) final public var voucher: MCIVoucherTransaction?
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class MarketpayCategoriesTableCell : UIKit.UITableViewCell, MCISDKKit.NibReusable, MCISDKKit.Identifiable {
   @_Concurrency.MainActor(unsafe) @objc override final public func awakeFromNib()
@@ -231,10 +222,9 @@ extension MarketpayCategoriesVC : UIKit.UICollectionViewDataSource, UIKit.UIColl
 public struct MCISDKMarketpay : MarketplaceInjectable {
   public init()
   public func present(_ controller: UIKit.UIViewController, title: Swift.String, image: UIKit.UIImage? = nil, transition: UIKit.UIModalTransitionStyle, completion: (() -> Swift.Void)?)
-  public func presentEmbed(_ controller: inout UIKit.UIViewController, with image: UIKit.UIImage?, transition: UIKit.UIModalTransitionStyle, title: Swift.String, tabImage: UIKit.UIImage, completion: (() -> Swift.Void)?)
+  public func embed(transition: UIKit.UIModalTransitionStyle, title: Swift.String, navImage: UIKit.UIImage?, tabImage: UIKit.UIImage) -> UIKit.UIViewController
   public func voucher(activeAccounts: [MCIAccount]?, serviceTittle: Swift.String?, merchant: MCIMerchant) -> UIKit.UIViewController
   public func cellphoneRecharge(activeAccounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
-  public func webView(activeAcounts: [MCIAccount]?, merchant: MCIMerchant) -> UIKit.UIViewController
   public func empty() -> UIKit.UIViewController
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CategoryListVC : MCISDKKit.MCIViewController {
