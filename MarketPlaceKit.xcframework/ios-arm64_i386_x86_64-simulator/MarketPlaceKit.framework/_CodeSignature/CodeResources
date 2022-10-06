@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qjKIsO9a4qC2E6NhnhDU/AD+PHo=
+		rRRfq2PDqw8QwHXpLfGDXCjXMtg=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5I2jPpgE6OQysY28oVPeWXka0bk=
+		hqzJMBi7hTHzfrK7Y+1qCToarXw=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zFIw7yIpZsFH//kAg/hK9AiR6fo=
+		Imlr/xA3n05k78JqnT4qdvMisUE=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BV3g6RUMoMlspWVx2Ogd61DYu7c=
+		RHnYLbvalpGFpcethc7ad44eEIk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5I2jPpgE6OQysY28oVPeWXka0bk=
+			hqzJMBi7hTHzfrK7Y+1qCToarXw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZpwExL6GOwtk8a28qGEV4fTGTVljqGtmB+OKafOQ9VQ=
+			xPk3E+J5ImEHZUXvtyyjzMCrn7y6JtOuEeCTXX1hpYE=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -140,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zFIw7yIpZsFH//kAg/hK9AiR6fo=
+			Imlr/xA3n05k78JqnT4qdvMisUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			MvTzPP23zXky4yY9JbtK39XLm3mRWsmxrPqtCplQgmc=
+			bne8y9NvYPy0xzQfaR4NmPlMT6f6yIRoO6WtZESu/s8=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BV3g6RUMoMlspWVx2Ogd61DYu7c=
+			RHnYLbvalpGFpcethc7ad44eEIk=
 			</data>
 			<key>hash2</key>
 			<data>
-			40D62uVYsnIxZ7WlWZcmaB4r9zS4lSyo9J/i5X2zzEg=
+			jkazHPIDg4zAUJ5y4cWidkQWxFkPgkFmrdgG2dVxSaM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
