@@ -302,19 +302,19 @@
 		</data>
 		<key>Marketpay.storyboardc/MarketpayNC.nib/objects-11.0+.nib</key>
 		<data>
-		5YtnXPXpEXvoEta1ZMIBryANZXQ=
+		9pcHeZPUDV4WKpxh406zx3paCj4=
 		</data>
 		<key>Marketpay.storyboardc/MarketpayNC.nib/runtime.nib</key>
 		<data>
-		5YtnXPXpEXvoEta1ZMIBryANZXQ=
+		9pcHeZPUDV4WKpxh406zx3paCj4=
 		</data>
 		<key>Marketpay.storyboardc/MarketpayVC.nib/objects-11.0+.nib</key>
 		<data>
-		AR38rbPBRkZ0hIu7+yU7tgk61GM=
+		ky2hAZY9wFP6rj3VO/kkRuzeC2s=
 		</data>
 		<key>Marketpay.storyboardc/MarketpayVC.nib/runtime.nib</key>
 		<data>
-		AR38rbPBRkZ0hIu7+yU7tgk61GM=
+		ky2hAZY9wFP6rj3VO/kkRuzeC2s=
 		</data>
 		<key>Marketpay.storyboardc/nbp-7X-45s-view-NoZ-2d-UW6.nib/objects-11.0+.nib</key>
 		<data>
@@ -394,7 +394,7 @@
 		</data>
 		<key>Modules/MCISDKMarketpay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LWr0fnpZfA85+7lPqKzlLhqgO/U=
+		ki0Ggcvsn/JiqFZuNGTcBBULzMc=
 		</data>
 		<key>Modules/MCISDKMarketpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -406,7 +406,7 @@
 		</data>
 		<key>Modules/MCISDKMarketpay.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UcBKB3uO21y/UVwijkme5TTqKsM=
+		hY7u80kIoz5Sj9P5b3pPp3RrlE4=
 		</data>
 		<key>Modules/MCISDKMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -418,7 +418,7 @@
 		</data>
 		<key>Modules/MCISDKMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2onycoTvCzNjanzzWHMr15M0dNs=
+		cZrUAIDhEtCgXj7ZoHGoEOyTk7w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1398,44 +1398,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5YtnXPXpEXvoEta1ZMIBryANZXQ=
+			9pcHeZPUDV4WKpxh406zx3paCj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			2vv5p+Wm+6nSvdNyrkSchhe+q0JHwAvRb1ZLJuuYMOE=
+			6Ad1zTzSxAQ/oRvr7KX3KUAVOrT2xWtQP/jwcsOcqII=
 			</data>
 		</dict>
 		<key>Marketpay.storyboardc/MarketpayNC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5YtnXPXpEXvoEta1ZMIBryANZXQ=
+			9pcHeZPUDV4WKpxh406zx3paCj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			2vv5p+Wm+6nSvdNyrkSchhe+q0JHwAvRb1ZLJuuYMOE=
+			6Ad1zTzSxAQ/oRvr7KX3KUAVOrT2xWtQP/jwcsOcqII=
 			</data>
 		</dict>
 		<key>Marketpay.storyboardc/MarketpayVC.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AR38rbPBRkZ0hIu7+yU7tgk61GM=
+			ky2hAZY9wFP6rj3VO/kkRuzeC2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			jdUevDYHXCN7iiB6j/fxsgV5B2qOHET7RdhvdZ0s4jU=
+			VffGN9ipvZOq2wZHFSKPh5auauqQ52r0i635G6CjUK4=
 			</data>
 		</dict>
 		<key>Marketpay.storyboardc/MarketpayVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AR38rbPBRkZ0hIu7+yU7tgk61GM=
+			ky2hAZY9wFP6rj3VO/kkRuzeC2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			jdUevDYHXCN7iiB6j/fxsgV5B2qOHET7RdhvdZ0s4jU=
+			VffGN9ipvZOq2wZHFSKPh5auauqQ52r0i635G6CjUK4=
 			</data>
 		</dict>
 		<key>Marketpay.storyboardc/nbp-7X-45s-view-NoZ-2d-UW6.nib/objects-11.0+.nib</key>
@@ -1651,11 +1651,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LWr0fnpZfA85+7lPqKzlLhqgO/U=
+			ki0Ggcvsn/JiqFZuNGTcBBULzMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			WH195sdU8AWaYUVNg5mSzGrt7ETzjxK4CPyQRdz/r1Y=
+			x9W4VJE67MzZ3INgLJ5cgPGd6VfnJOnxIo6i54N7EfU=
 			</data>
 		</dict>
 		<key>Modules/MCISDKMarketpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -1684,11 +1684,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UcBKB3uO21y/UVwijkme5TTqKsM=
+			hY7u80kIoz5Sj9P5b3pPp3RrlE4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1vNy0U6imXM4qx8S7BZbEOXV5deI9SFqabvZNaGqnMM=
+			ABn8dc2JjIncWjFdp/RrMzOOOVyV79THPNhGIeVrapA=
 			</data>
 		</dict>
 		<key>Modules/MCISDKMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1717,11 +1717,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2onycoTvCzNjanzzWHMr15M0dNs=
+			cZrUAIDhEtCgXj7ZoHGoEOyTk7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			7GIkDeWnOdMFDUwUpbmfYU7AJgfEBN3HMfO/JQNygX4=
+			Ffy4w6XV7+2QXnhMHbyu6INHy59hA6Jj1YFqrlWgrko=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
