@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name            = "MarketPlaceKit"
-  spec.version         = "2.0.0-RC.7"
+  spec.version         = "1.9.12"
   spec.summary         = "MarketPlaceKit é framework destinado a Merci e seus parceiros."
   spec.swift_versions  = ['5']
 
@@ -19,18 +19,19 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = 'https://github.com/merci-app/marketplacekit-podspec'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
-  spec.authors      = { 'Thais Sadami' => 'thais dot sadami @ dock dot tech' }
-  spec.source       = { :git => 'https://github.com/merci-app/marketplacekit-podspec.git', :tag => '2.0.0-RC.7' }
-
+  spec.authors      = { 'Tiago Oliveira' => 'tiago dot oliveira @ dock dot tech' }
+  spec.source       = { :git => 'https://github.com/merci-app/marketplacekit-podspec.git', :tag => '1.9.12' }
+ 
   spec.ios.deployment_target = '10.0'
   spec.vendored_frameworks   = [
-    'MCISDKMarketpay.xcframework',
+    'MCIMarketpay.xcframework',
     'MarketPlaceKit.xcframework'
   ]
 
   spec.frameworks  = 'UIKit', 'MapKit'
   spec.dependency 'Alamofire', '<= 4.9.1'
   spec.dependency 'Kingfisher'
-  spec.dependency 'KeychainAccess', '~> 4.2.2'
+  spec.dependency 'AlamofireNetworkActivityIndicator', '~> 2.4.0'
+  spec.dependency 'KeychainAccess', '<= 4.2.0'
   spec.dependency 'TPKeyboardAvoiding', '~> 1.3'
 end
