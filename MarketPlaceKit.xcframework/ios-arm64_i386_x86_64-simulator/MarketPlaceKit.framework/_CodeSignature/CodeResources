@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HqTZWVBzE5G8r7gwokae3jn+yYM=
+		zeTBBZKafBE5OwzTdlT9JE/UIzE=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GexT4Z+1qJRUEMGN3GP9dDSYvLw=
+		CHcgTFQgj4T6PAkSHBMzL12AZ5Q=
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qaKhiIwrYFqEE8tyX5PIgOxf7ek=
+		lAWQpRYilwd03+BFf9frPktEYrI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HqTZWVBzE5G8r7gwokae3jn+yYM=
+			zeTBBZKafBE5OwzTdlT9JE/UIzE=
 			</data>
 			<key>hash2</key>
 			<data>
-			rOMSpgeEQLTS9j31cZ7U70dzzytEqklHOENGr9NZqrc=
+			avzYg72g0kGzct6fm1YZg/S8zbT028K4TxMhTfopR5g=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -140,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GexT4Z+1qJRUEMGN3GP9dDSYvLw=
+			CHcgTFQgj4T6PAkSHBMzL12AZ5Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			XseSAc/VI97f1qJCnKT3Kzfd8MQLwNRTwtq7Ep5YZ9I=
+			7mKaxs6BEHNff2tlAzWIzHTfnZ0/Vm3jkwkQXgWu8kY=
 			</data>
 		</dict>
 		<key>Modules/MarketPlaceKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qaKhiIwrYFqEE8tyX5PIgOxf7ek=
+			lAWQpRYilwd03+BFf9frPktEYrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			huJjZ6BypUNKoKsGvjGduJBajqz3D3p3GaS5p+TqZzk=
+			f93dUXAP/uZ7zqt2eMcbeT5+KYqBCUUnpwK5RIVJJZc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
