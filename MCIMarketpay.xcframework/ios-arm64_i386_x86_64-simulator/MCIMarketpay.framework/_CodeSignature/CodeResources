@@ -214,7 +214,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		CXcA86/l4jNEFqaA7THnntzN+oM=
+		T0XJ+qiZZHZD4Cg9ykiMBcnGebQ=
 		</data>
 		<key>Category.storyboardc/Aoh-aC-1rx-view-dts-gG-1uw.nib/objects-11.0+.nib</key>
 		<data>
@@ -470,7 +470,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YfGVRxLXUZWNtwf+F+LpZZtmb5k=
+		mpQSsJANAUqaYjBKD8PE5CEV4Pg=
 		</data>
 		<key>Marketpay.storyboardc/Info.plist</key>
 		<data>
@@ -602,7 +602,7 @@
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		de/HDHsMgtIR/E5A+hF0tdiuZrE=
+		4nno/UgpN/ozszhz/HVrvOCAzfE=
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -614,7 +614,7 @@
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		I2cds3Avakma3jYOBfJhTbKFcXE=
+		jHGO/fdvYGU8JpCU2zAvWEFDyuo=
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -626,7 +626,7 @@
 		</data>
 		<key>Modules/MCIMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RAc55A7Z3aX3mI2VQbTUJLBXX/8=
+		rAVu21RxPmHrev8KnyIsma23IwU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1575,11 +1575,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CXcA86/l4jNEFqaA7THnntzN+oM=
+			T0XJ+qiZZHZD4Cg9ykiMBcnGebQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			6eOuDr/nSi4mreP0tssbTo7Cvd7XGZ4n/05CZnwDTsU=
+			ZXTOz4TYsbuWojMlfeLTIhdxooPR+S108yE9cxchCFo=
 			</data>
 		</dict>
 		<key>Category.storyboardc/Aoh-aC-1rx-view-dts-gG-1uw.nib/objects-11.0+.nib</key>
@@ -2631,11 +2631,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			de/HDHsMgtIR/E5A+hF0tdiuZrE=
+			4nno/UgpN/ozszhz/HVrvOCAzfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qk5xIT2YtrQ0koWW7gWCbTS+haiaNmn3DCd7D+NAlTM=
+			l/BfmO/IcyHOnzwHl/DspH8Yu6fQXZIo3t6ZrWlTvBo=
 			</data>
 		</dict>
 		<key>Modules/MCIMarketpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -2664,11 +2664,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I2cds3Avakma3jYOBfJhTbKFcXE=
+			jHGO/fdvYGU8JpCU2zAvWEFDyuo=
 			</data>
 			<key>hash2</key>
 			<data>
-			CiASdvmpyFcR9rMBcu+8sfcM4xAspphBIHp/wrQ5gho=
+			WV7Xv7v3R6BmcFEiI8JRFueBclntgT8g5jshJ+gZ6h4=
 			</data>
 		</dict>
 		<key>Modules/MCIMarketpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2697,11 +2697,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RAc55A7Z3aX3mI2VQbTUJLBXX/8=
+			rAVu21RxPmHrev8KnyIsma23IwU=
 			</data>
 			<key>hash2</key>
 			<data>
-			wEr1CPiHSIIlDVdXh4b/NcOcAwUHoAFQcSjMh4FGLfo=
+			F2ow3ZFboI2n0ApYK+u/Z3GPPHssBf+Z+ID13C4AexE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
